@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Giftlist from './Giftlist';
+import happyDayImage from './happyDayImage.jpg';
+import giftRoom from './giftRoom.jpg'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    return(
+    <div className='app'>
+      <div className='container'>
+      <img className='img' src={happyDayImage} alt="present" width="350px" />
+      </div>
+      <div className='container'>
+      <h1 className='header'>Gift List for the guests.</h1>
+      </div>
+      <Giftlist />
+      <div className='container'>
+      <img className='img two' src={giftRoom} alt="room" width="300px" height="200px"/>
+      </div>
+      <div className='container'>
+      <p className='text'>Thank you! See you on the party!</p>
+      </div>
+      </div>
   );
 }
 
